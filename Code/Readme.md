@@ -1,0 +1,11 @@
+最终通过了axi性能测试，十个测试全过。
+axi性能测试的myCPU在Perf_test中。这是最终版本。
+似乎不同版本的tb文件中定义的外部中断信号名不同，有ext_int和int两种，可能需要针对测试时使用的tb文件对my_cpu模块的端口中该信号的名字进行修改。
+
+Others中附了先前的两个版本和尝试做的cache版本，cache版本卡在89个测试点中的第77个点。
+
+Others文件夹下：
+sram89文件夹中是通过了89个测试点的sram接口的mycpu。
+axi89文件夹中是通过了89个测试点的axi接口的mycpu。
+cache文件夹中是尝试加了写直达cache但卡在第77个测试点的mycpu。
+
